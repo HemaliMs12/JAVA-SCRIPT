@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+</style>
+<button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+<body>
+    <div class="row">
+        <div class="column">
+          <img src="https://img.cdn.zostel.com/zostel/gallery/images/MvvMYzTOSOO7Xt7oBlN0qw/zostel-dalhousie-facade-20211223204725.jpg?w=1280" style="width: 50%;">
+          <img src="https://ihpl.b-cdn.net/pictures/tourintro/rediscover-manali-737.png"style="width: 60%;">
+          <img src="https://encrypted-tbn0.gstatic.com/imag
+          es?q=tbn:ANd9GcT-PqXVdQ7EAhw-2v0yvwN_R1HtXL8iiirdjSWtlRMYV1gwczJvAbTtO4rF3O798xupqqI&usqp=CAU"style="width: 70%;">
+          <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?i
+          xlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuYWxpfGVufDB8fDB8fA%3D%3D&w=1000&q=80"  >
+          <img src="https://i0.wp.com/theetlrb
+          log.com/wp-content/uploads/2020/12/Manali-7-Day-Travel-Itinerary-theETLRblog.jpg?fit=1000%2C750&ssl=1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB93nQlxsTpOq9kPgedhivbKF_U7rX0-bysg&usqp=CAU">
+          <img src="https://media.istockphoto.com/id/1316648820/photo/view-of-the-solang-village-on-top-of-the-mountain-at-manali-in-him
+          achal-pradesh-india.jpg?b=1&s=170667a&w=0&k=20&c=PZ14CFX5r38lpQwYAkfWg7W7dmcbMUxodG2Y57cn1ww=">
+        </div>
+        <div class="column">
+          <img src="https://media.istockphoto.com/id/1222093305/p
+          hoto/himachal-pradesh-india.jpg?b=1&s=170667a&w=0&k=20&c=ehTruWHRcgugDSHYqhzJwBg8Km3xjt44bwOCuKdKxV4=">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/f7/c5/fe/foghills-manali-cottages.jpg">
+          <img src="https://i.pinimg.com/originals/b5/b0/97/b5b0976b0e3afa6b033afede24794198.jpg">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCPB2A4U6PNz1OxkjCwOXapOgHG-WlwpoSQ&usqp=CAU">
+          <img src="https://www.honeymoonpackagesmanali.org/uploads/8/2/6/1/8261259/2619542_orig.jpg">
+          <img src="https://static2.tripoto.com/media/filter/tst/img/10291/SpotDocument/img_6401.jpg">
+        </div>
+        <div class="column">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Kullu_Manali.jpg">
+          <img src="https://encrypted-tbn0.gstatic.com/im
+          ages?q=tbn:ANd9GcS1Zfx1TlOtlQm5nYbnX8uTSp5NX9njsbRnNX8etQ7vrcjbD2TDnMHtiQ857yy5tbpcNq4&usqp=CAU">
+          <img src="https://www.skymetweather.com/content/wp-content/uploads/2022/01/Snow-in-Shimla-FB.jpg">
+          <img src="https://resize.indiatvnews.com/en/resize/oldbucket/730_-/mainnational/IndiaTv69ae9e_manali_snow.jpg">
+          <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/SnowfallManali0310.jpg">
+          <img src="https://www.deccanherald.com/sites/dh/files/articleimages/2022/01/02/pti12262021000088b-1-1067149-1641121335.jpg">
+          <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2019/01/22/5b7acb6b8aec4b5984ebccd2bbde14ea.jpg?quality=80&zoom=1&ssl=1">
+        </div>
+        <div class="column">
+          <img src="https://i0.wp.com/discoverkullumanali.in/wp-content/uploads/2019/02/A-village-near-Manali-after-snowfall-discover-kullu-manali.jpg?w=1062&ssl=1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaF4xwx6U10j3tKEq31dHh4lnJ67mdQHPDwA&usqp=CAU">
+          <img src="https://www.kosha.co/journal/wp-content/uploads/2021/10/Manali-Travel.jpg">
+          <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/12/76.jpg">
+          <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/12/117.jpg">
+          <img src="https://www.holidify.com/images/bgImages/DALHOUSIE.jpg" >
+        </div>
+      </div>
+</body>
+</html>
